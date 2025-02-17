@@ -1,55 +1,69 @@
 /* General Styles */
+:root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --section-bg: #1e1e1e;
+    --highlight-color: #6e45e2;
+}
+
+.light-mode {
+    --background-color: #f9f9f9;
+    --text-color: #000000;
+    --section-bg: #ffffff;
+    --highlight-color: #6e45e2;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #121212;
-    color: #ffffff;
+    background-color: var(--background-color);
+    color: var(--text-color);
     text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Dark Mode Toggle Button */
+#dark-mode-toggle {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: var(--highlight-color);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background: #4b33a8;
 }
 
 /* Header Styling */
 header {
-    background: linear-gradient(135deg, #6e45e2, #88d3ce);
-    padding: 20px;
+    background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
+    padding: 40px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-/* Navigation */
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    background-color: #222;
-    margin: 0;
-}
-
-nav ul li {
-    margin: 10px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px 15px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    background-color: #6e45e2;
-    border-radius: 5px;
+/* Navigation - Now Hidden Since It's Scrolling */
+nav {
+    display: none;
 }
 
 /* Section Styling */
 section {
-    padding: 40px;
-    margin: 20px auto;
+    padding: 60px;
+    margin: 40px auto;
     max-width: 800px;
-    background-color: #1e1e1e;
+    background-color: var(--section-bg);
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease;
 }
 
 /* Smooth Fade-In Animation */
@@ -62,4 +76,11 @@ section {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Logo */
+#logo {
+    max-width: 120px;
+    display: block;
+    margin: 0 auto 20px;
 }
