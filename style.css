@@ -1,48 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tereza Jerabkova - Astrophysicist</title>
-    <link rel="stylesheet" href="style.css">
-    <script defer src="script.js"></script>
-</head>
-<body>
-    <header>
-        <img id="logo" src="images/logo.png" alt="Tereza Jerabkova Logo">
-        <h1 class="large-text">Tereza Jerabkova</h1>
-        <p>Assistant Professor | Stellar Populations in Galaxies</p>
-        <p>Department of Theoretical Physics and Astrophysics, Faculty of Science, Masaryk University, Brno</p>
-    </header>
-    
-    <section id="about" class="fade-in">
-        <h2>About Me</h2>
-        <p>I am an astrophysicist leading the Stellar Populations in Galaxies research group at Masaryk University. My research focuses on the Initial Mass Function, star clusters, and galaxy evolution.</p>
-    </section>
-    
-    <section id="group-members" class="fade-in">
-        <h2>Group Members</h2>
-        <ul>
-            <li>Dr. [Name] - Postdoctoral Researcher</li>
-            <li>[Name] - PhD Student</li>
-            <li>[Name] - Master’s Student</li>
-        </ul>
-    </section>
-    
-    <section id="publications" class="fade-in">
-        <h2>Publications</h2>
-        <p>See my research on <a href="https://ui.adsabs.harvard.edu/search/q=author%3A%22Jerabkova%2C%20Tereza%22&sort=date%20desc">ADS</a> or <a href="https://orcid.org/0000-0001-5107-0443">ORCID</a>.</p>
-    </section>
-    
-    <section id="projects" class="fade-in">
-        <h2>Projects</h2>
-        <p>Current research includes studies on the variability of the stellar Initial Mass Function and resolved stellar populations in galaxies.</p>
-    </section>
-    
-    <section id="contact" class="fade-in">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:tjerabkova@gmail.com">tjerabkova@gmail.com</a></p>
-        <p>GitHub: <a href="https://github.com/azeret">github.com/azeret</a></p>
-    </section>
-</body>
-</html>
+/* General Styles */
+:root {
+    --background-color: #121212;
+    --text-color: #ffffff;
+    --section-bg: #1e1e1e;
+    --highlight-color: #6e45e2;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    text-align: center;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
+    padding: 40px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Section Styling - Now Full Width */
+section {
+    padding: 60px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: var(--section-bg);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.5s ease;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    section {
+        width: 95%;
+        padding: 40px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
