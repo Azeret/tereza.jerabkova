@@ -6,13 +6,6 @@
     --highlight-color: #6e45e2;
 }
 
-.light-mode {
-    --background-color: #f9f9f9;
-    --text-color: #000000;
-    --section-bg: #ffffff;
-    --highlight-color: #6e45e2;
-}
-
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -23,64 +16,41 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Dark Mode Toggle Button */
-#dark-mode-toggle {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    background: var(--highlight-color);
-    border: none;
-    color: white;
-    padding: 10px 15px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    transition: 0.3s;
-}
-
-#dark-mode-toggle:hover {
-    background: #4b33a8;
-}
-
 /* Header Styling */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
     padding: 40px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    box-sizing: border-box;
 }
 
-/* Navigation - Now Hidden Since It's Scrolling */
-nav {
-    display: none;
-}
-
-/* Section Styling */
+/* Section Styling - Now Full Width */
 section {
     padding: 60px;
-    margin: 40px auto;
-    max-width: 800px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
     background-color: var(--section-bg);
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     transition: background-color 0.5s ease;
 }
 
-/* Smooth Fade-In Animation */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    section {
+        width: 95%;
+        padding: 40px;
+    }
 }
 
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-/* Logo */
-#logo {
-    max-width: 120px;
-    display: block;
-    margin: 0 auto 20px;
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+    p {
+        font-size: 16px;
+    }
 }
