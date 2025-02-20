@@ -16,7 +16,7 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling */
+/* Header Styling - Align Logo to the Left */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
     padding: 40px;
@@ -24,6 +24,25 @@ header {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     width: 100%;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    gap: 20px;
+    padding-left: 5%;
+}
+
+/* Logo Styling - Positioned to the Left */
+#logo {
+    width: 150px; /* Adjust width as needed */
+    height: auto;
+    display: block;
+}
+
+/* Header Text Styling - Changed to Black */
+.header-text {
+    color: black;
+    text-align: left;
 }
 
 /* Section Styling - Now Wider */
@@ -40,6 +59,18 @@ section {
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding-left: 0;
+    }
+    #logo {
+        margin-bottom: 10px;
+    }
+    .header-text {
+        text-align: center;
+    }
     section {
         width: 98%;
         padding: 40px;
