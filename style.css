@@ -3,7 +3,8 @@
     --background-color: #121212;
     --text-color: #000000; /* Ensuring text is black */
     --section-bg: #1e1e1e;
-    --highlight-color: #6e45e2;
+    --highlight-color-uni: #2A2AC0; /* University blue */
+    --highlight-color-faculty: #00A550; /* Faculty green */
 }
 
 body {
@@ -16,9 +17,9 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling - More Compact Layout */
+/* Header Styling - More Compact Layout with New Colors */
 header {
-    background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
+    background: linear-gradient(135deg, var(--highlight-color-uni), var(--highlight-color-faculty));
     padding: 5px 5%; /* Reduced padding for a more compact look */
     width: 100vw;
     box-sizing: border-box;
