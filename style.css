@@ -19,7 +19,7 @@ body {
 
 /* Header Styling - More Compact Layout with New Colors */
 header {
-    background: linear-gradient(135deg, var(--highlight-color-uni), var(--highlight-color-faculty));
+    background: linear-gradient(to right, var(--highlight-color-uni), var(--highlight-color-faculty));
     padding: 5px 5%; /* Reduced padding for a more compact look */
     width: 100vw;
     box-sizing: border-box;
