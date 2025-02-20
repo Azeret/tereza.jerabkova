@@ -24,7 +24,7 @@ header {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     position: relative;
     min-height: 180px;
@@ -46,15 +46,15 @@ header {
 }
 
 .header-logo {
-    width: 100px; /* Properly resized */
+    width: 115px; /* Increased by 15% */
     height: auto;
 }
 
 /* Centered Main Logo */
 #logo {
-    width: 350px;
+    width: 402px; /* Increased by 15% */
     height: auto;
-    max-width: 40vw;
+    max-width: 46vw;
     margin-top: 60px; /* Ensures spacing below university logos */
 }
 
@@ -78,8 +78,8 @@ section {
 }
 
 .group-member img {
-    width: 120px;
-    height: 120px;
+    width: 138px; /* Increased by 15% */
+    height: 138px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
@@ -93,28 +93,28 @@ section {
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .header-logo {
-        width: 80px;
+        width: 92px;
     }
     #logo {
-        width: 300px;
-        max-width: 45vw;
+        width: 345px;
+        max-width: 52vw;
     }
     .group-member img {
-        width: 100px;
-        height: 100px;
+        width: 115px;
+        height: 115px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .header-logo {
-        width: 70px;
+        width: 80px;
     }
     #logo {
-        width: 280px;
-        max-width: 50vw;
+        width: 322px;
+        max-width: 55vw;
     }
     .group-member img {
-        width: 80px;
-        height: 80px;
+        width: 92px;
+        height: 92px;
     }
 }
