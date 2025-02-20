@@ -16,10 +16,10 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling - Enlarged Logo for Group Page */
+/* Header Styling - Tightened Around Logo */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
-    padding: 80px;
+    padding: 20px 0;
     width: 100vw;
     box-sizing: border-box;
     display: flex;
@@ -28,12 +28,12 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
-    min-height: 70vh;
+    min-height: auto;
 }
 
-/* Enlarged Logo */
+/* Logo Styling - Scaled Dynamically */
 #logo {
-    width: 500px; /* Further increased size */
+    width: 500px;
     height: auto;
     display: block;
     margin: 0 auto;
@@ -74,9 +74,6 @@ section {
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
-    header {
-        min-height: 60vh;
-    }
     #logo {
         width: 450px;
         max-width: 60vw;
