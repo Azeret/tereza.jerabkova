@@ -16,42 +16,31 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Top Logos Bar - Integrated into Header Background */
-.top-logos {
-    width: 100vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 5%;
-    background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
-    position: relative;
-}
-
-.top-logos img {
-    width: 150px;
-    height: auto;
-}
-
-/* Header Styling - Centered Main Logo Below Top Logos */
+/* Header Styling - Integrated University Logos */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
-    padding: 40px 0;
+    padding: 20px 5%;
     width: 100vw;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     position: relative;
-    overflow: hidden;
-    min-height: auto;
+    min-height: 150px;
+}
+
+/* University Logos - Now inside the header */
+.header-logo {
+    width: 150px;
+    height: auto;
+    display: block;
 }
 
 /* Centered Main Logo */
 #logo {
     width: 500px;
     height: auto;
-    display: block;
     max-width: 50vw;
 }
 
@@ -89,7 +78,7 @@ section {
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
-    .top-logos img {
+    .header-logo {
         width: 120px;
     }
     #logo {
@@ -103,7 +92,7 @@ section {
 }
 
 @media screen and (max-width: 480px) {
-    .top-logos img {
+    .header-logo {
         width: 100px;
     }
     #logo {
