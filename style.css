@@ -1,7 +1,7 @@
 /* General Styles */
 :root {
     --background-color: #121212;
-    --text-color: #000000; /* Ensuring text is black */
+    --text-color: #ffffff; /* Changed text to light for contrast */
     --section-bg: #1e1e1e;
     --highlight-color-uni: #2A2AC0; /* University blue */
     --highlight-color-faculty: #00A550; /* Faculty green */
@@ -30,6 +30,7 @@ header {
     position: relative;
     min-height: 140px; /* Reduced height */
     flex-direction: column;
+    color: var(--text-color); /* Ensuring text remains visible in header */
 }
 
 /* University Logos on the Top Left and Right */
@@ -76,6 +77,7 @@ section {
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     transition: background-color 0.5s ease;
+    color: var(--text-color); /* Ensuring text remains light and visible */
 }
 
 /* Group Members Styling */
@@ -96,6 +98,7 @@ section {
 .group-member p {
     margin-top: 5px;
     font-size: 18px;
+    color: var(--text-color); /* Ensuring text is visible in dark sections */
 }
 
 /* Responsive Design */
