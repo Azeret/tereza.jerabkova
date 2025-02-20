@@ -16,29 +16,33 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling - Fully Integrated University Logos */
+/* Header Styling - Fully Integrated University Logos on Top */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
-    padding: 10px 5%;
+    padding: 20px 5%;
     width: 100vw;
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     position: relative;
     min-height: 180px;
     flex-direction: column;
 }
 
-/* Container for University Logos */
+/* University Logos on the Top Left and Right */
 .header-logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     max-width: 1100px;
-    margin-bottom: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 0 5%;
 }
 
 .header-logo {
@@ -51,6 +55,7 @@ header {
     width: 350px;
     height: auto;
     max-width: 40vw;
+    margin-top: 60px; /* Ensures spacing below university logos */
 }
 
 /* Section Styling - Now Wider */
