@@ -16,72 +16,28 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling - Centered with Subtle Graphics */
+/* Header Styling - Enlarged Logo for Group Page */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
-    padding: 40px;
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 80px;
     width: 100vw;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    flex-direction: column;
     position: relative;
     overflow: hidden;
-    min-height: 50vh;
+    min-height: 70vh;
 }
 
-/* More Visible Decorative Arcs */
-header::before, header::after {
-    content: "";
-    position: absolute;
-    width: 500px;
-    height: 500px;
-    border: 4px solid black;
-    border-radius: 50%;
-    opacity: 0.8;
-    z-index: 0;
-}
-
-header::before {
-    top: -200px;
-    left: -150px;
-    border-width: 3px;
-    border-top: none;
-    border-right: none;
-}
-
-header::after {
-    bottom: -200px;
-    right: -150px;
-    border-width: 3px;
-    border-bottom: none;
-    border-left: none;
-}
-
-/* Logo Styling - Enlarged */
+/* Enlarged Logo */
 #logo {
-    width: 320px; /* Increased size further */
+    width: 500px; /* Further increased size */
     height: auto;
     display: block;
-    margin: 0 auto 20px;
-    max-width: 40vw;
-    position: relative;
-    z-index: 1;
-}
-
-/* Header Text Styling - Centered */
-.header-text {
-    color: black;
-    text-align: center;
-    width: 100%;
-    max-width: 900px;
     margin: 0 auto;
-    position: relative;
-    z-index: 1;
+    max-width: 60vw;
 }
 
 /* Section Styling - Now Wider */
@@ -96,31 +52,48 @@ section {
     transition: background-color 0.5s ease;
 }
 
+/* Group Members Styling */
+.group-member {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.group-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white;
+}
+
+.group-member p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     header {
-        flex-direction: column;
-        text-align: center;
+        min-height: 60vh;
     }
     #logo {
-        width: 280px;
-        max-width: 45vw;
-        margin-bottom: 10px;
+        width: 450px;
+        max-width: 60vw;
     }
-    header::before, header::after {
-        width: 400px;
-        height: 400px;
-    }
-    .header-text {
-        text-align: center;
+    .group-member img {
+        width: 100px;
+        height: 100px;
     }
 }
 
 @media screen and (max-width: 480px) {
-    h1 {
-        font-size: 28px;
+    #logo {
+        width: 400px;
+        max-width: 70vw;
     }
-    p {
-        font-size: 16px;
+    .group-member img {
+        width: 80px;
+        height: 80px;
     }
 }
