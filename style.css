@@ -1,6 +1,7 @@
 /* General Styles */
 :root {
-    --background-color: linear-gradient(to bottom, #f0f0f0, #d9d9d9); /* Light grey gradient */
+    --background-color-start: #f8f8f8; /* Light grey */
+    --background-color-end: #d9d9d9; /* Slightly darker grey */
     --text-color: #000000; /* Black text */
     --section-bg: #ffffff; /* White background for sections */
     --highlight-color-uni: #2A2AC0; /* University blue */
@@ -11,7 +12,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: var(--background-color);
+    background: linear-gradient(to bottom, var(--background-color-start), var(--background-color-end));
     color: var(--text-color);
     text-align: center;
     transition: background 0.5s ease, color 0.5s ease;
@@ -75,7 +76,7 @@ section {
     max-width: 1200px;
     background-color: var(--section-bg);
     border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: background 0.5s ease;
     color: var(--text-color); /* Ensuring text is black */
 }
