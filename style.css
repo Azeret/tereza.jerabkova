@@ -1,8 +1,8 @@
 /* General Styles */
 :root {
-    --background-color: #121212;
-    --text-color: #ffffff; /* Ensuring text is white for contrast */
-    --section-bg: #1e1e1e;
+    --background-color: linear-gradient(to bottom, #f0f0f0, #d9d9d9); /* Light grey gradient */
+    --text-color: #000000; /* Black text */
+    --section-bg: #ffffff; /* White background for sections */
     --highlight-color-uni: #2A2AC0; /* University blue */
     --highlight-color-faculty: #00A550; /* Faculty green */
 }
@@ -11,10 +11,10 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
+    background: var(--background-color);
     color: var(--text-color);
     text-align: center;
-    transition: background-color 0.5s ease, color 0.5s ease;
+    transition: background 0.5s ease, color 0.5s ease;
 }
 
 /* Header Styling - More Compact Layout with New Colors */
@@ -30,7 +30,7 @@ header {
     position: relative;
     min-height: 140px; /* Reduced height */
     flex-direction: column;
-    color: var(--text-color); /* Ensuring text remains visible in header */
+    color: #ffffff; /* Keeping header text white */
 }
 
 /* University Logos on the Top Left and Right */
@@ -64,10 +64,10 @@ header {
     font-size: 24px;
     font-weight: bold;
     margin-top: -5px; /* Moved closer to logo */
-    color: var(--text-color);
+    color: #ffffff;
 }
 
-/* Section Styling - Ensuring Readability */
+/* Section Styling - Light Background */
 section {
     padding: 35px; /* Reduced padding for compactness */
     margin: 10px auto; /* Reduced margin */
@@ -76,12 +76,12 @@ section {
     background-color: var(--section-bg);
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-    transition: background-color 0.5s ease;
-    color: var(--text-color); /* Ensuring text remains white */
+    transition: background 0.5s ease;
+    color: var(--text-color); /* Ensuring text is black */
 }
 
 section h2, section p, section ul, .group-member p {
-    color: var(--text-color); /* Ensuring all section text is bright */
+    color: var(--text-color); /* Ensuring all section text is black */
 }
 
 /* Group Members Styling */
@@ -96,7 +96,7 @@ section h2, section p, section ul, .group-member p {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
-    border: 3px solid white;
+    border: 3px solid black;
 }
 
 /* Responsive Design */
