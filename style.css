@@ -16,7 +16,7 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling - Tightened Around Logo */
+/* Header Styling - Includes Additional Logos */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
     padding: 20px 0;
@@ -24,20 +24,28 @@ header {
     box-sizing: border-box;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     text-align: center;
     position: relative;
     overflow: hidden;
     min-height: auto;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-/* Logo Styling - Scaled Dynamically */
+/* Left and Right Logos - Smaller Size */
+.header-logo {
+    width: 80px;
+    height: auto;
+    display: block;
+}
+
+/* Centered Main Logo */
 #logo {
     width: 500px;
     height: auto;
     display: block;
-    margin: 0 auto;
-    max-width: 60vw;
+    max-width: 50vw;
 }
 
 /* Section Styling - Now Wider */
@@ -76,7 +84,10 @@ section {
 @media screen and (max-width: 1024px) {
     #logo {
         width: 450px;
-        max-width: 60vw;
+        max-width: 50vw;
+    }
+    .header-logo {
+        width: 60px;
     }
     .group-member img {
         width: 100px;
@@ -87,7 +98,10 @@ section {
 @media screen and (max-width: 480px) {
     #logo {
         width: 400px;
-        max-width: 70vw;
+        max-width: 60vw;
+    }
+    .header-logo {
+        width: 50px;
     }
     .group-member img {
         width: 80px;
