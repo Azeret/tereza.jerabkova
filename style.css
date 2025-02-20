@@ -1,7 +1,7 @@
 /* General Styles */
 :root {
     --background-color: #121212;
-    --text-color: #ffffff; /* Changed text to light for contrast */
+    --text-color: #ffffff; /* Ensuring text is white for contrast */
     --section-bg: #1e1e1e;
     --highlight-color-uni: #2A2AC0; /* University blue */
     --highlight-color-faculty: #00A550; /* Faculty green */
@@ -67,7 +67,7 @@ header {
     color: var(--text-color);
 }
 
-/* Section Styling - More Compact */
+/* Section Styling - Ensuring Readability */
 section {
     padding: 35px; /* Reduced padding for compactness */
     margin: 10px auto; /* Reduced margin */
@@ -77,7 +77,11 @@ section {
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
     transition: background-color 0.5s ease;
-    color: var(--text-color); /* Ensuring text remains light and visible */
+    color: var(--text-color); /* Ensuring text remains white */
+}
+
+section h2, section p, section ul, .group-member p {
+    color: var(--text-color); /* Ensuring all section text is bright */
 }
 
 /* Group Members Styling */
@@ -93,12 +97,6 @@ section {
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
-}
-
-.group-member p {
-    margin-top: 5px;
-    font-size: 18px;
-    color: var(--text-color); /* Ensuring text is visible in dark sections */
 }
 
 /* Responsive Design */
