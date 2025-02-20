@@ -1,7 +1,7 @@
 /* General Styles */
 :root {
     --background-color: #121212;
-    --text-color: #ffffff;
+    --text-color: #000000; /* Ensuring text is black */
     --section-bg: #1e1e1e;
     --highlight-color: #6e45e2;
 }
@@ -16,10 +16,10 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling - Fully Integrated University Logos on Top */
+/* Header Styling - More Compact Layout */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
-    padding: 20px 5%;
+    padding: 5px 5%; /* Reduced padding for a more compact look */
     width: 100vw;
     box-sizing: border-box;
     display: flex;
@@ -27,7 +27,7 @@ header {
     justify-content: center;
     text-align: center;
     position: relative;
-    min-height: 250px;
+    min-height: 140px; /* Reduced height */
     flex-direction: column;
 }
 
@@ -37,31 +37,38 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1300px;
+    max-width: 1100px;
     position: absolute;
-    top: 15px;
+    top: 5px; /* Moved logos higher */
     left: 50%;
     transform: translateX(-50%);
     padding: 0 5%;
 }
 
 .header-logo {
-    width: 180px; /* Enlarged significantly */
+    width: 150px;
     height: auto;
 }
 
-/* Centered Main Logo */
+/* Centered Main Logo and Title */
 #logo {
-    width: 600px; /* Enlarged significantly */
+    width: 500px; /* Adjusted size */
     height: auto;
-    max-width: 60vw;
-    margin-top: 100px; /* Ensures spacing below university logos */
+    max-width: 50vw;
+    margin-top: 30px; /* Moved higher */
 }
 
-/* Section Styling - Now Wider */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: -5px; /* Moved closer to logo */
+    color: var(--text-color);
+}
+
+/* Section Styling - More Compact */
 section {
-    padding: 60px;
-    margin: 20px auto;
+    padding: 35px; /* Reduced padding for compactness */
+    margin: 10px auto; /* Reduced margin */
     width: 90%;
     max-width: 1200px;
     background-color: var(--section-bg);
@@ -74,47 +81,47 @@ section {
 .group-member {
     display: inline-block;
     text-align: center;
-    margin: 20px;
+    margin: 8px; /* Reduced margin */
 }
 
 .group-member img {
-    width: 180px; /* Enlarged significantly */
-    height: 180px;
+    width: 160px;
+    height: 160px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
 }
 
 .group-member p {
-    margin-top: 10px;
+    margin-top: 5px;
     font-size: 18px;
 }
 
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .header-logo {
-        width: 150px;
+        width: 130px;
     }
     #logo {
-        width: 520px;
-        max-width: 65vw;
+        width: 450px;
+        max-width: 55vw;
     }
     .group-member img {
-        width: 160px;
-        height: 160px;
+        width: 140px;
+        height: 140px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .header-logo {
-        width: 130px;
+        width: 110px;
     }
     #logo {
-        width: 450px;
-        max-width: 70vw;
+        width: 400px;
+        max-width: 60vw;
     }
     .group-member img {
-        width: 140px;
-        height: 140px;
+        width: 120px;
+        height: 120px;
     }
 }
