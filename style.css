@@ -16,13 +16,13 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling - Centered with Graphics */
+/* Header Styling - Centered with Enlarged Graphics */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
     padding: 40px;
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
     display: flex;
     align-items: center;
@@ -31,35 +31,36 @@ header {
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    min-height: 50vh;
 }
 
-/* Decorative Arcs */
+/* Enlarged Decorative Arcs */
 header::before, header::after {
     content: "";
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 350px;
+    height: 350px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 50%;
 }
 
 header::before {
-    top: -50px;
-    left: -50px;
+    top: -100px;
+    left: -100px;
 }
 
 header::after {
-    bottom: -50px;
-    right: -50px;
+    bottom: -100px;
+    right: -100px;
 }
 
-/* Logo Styling - Enlarged */
+/* Logo Styling - Further Enlarged */
 #logo {
-    width: 250px; /* Increased size */
+    width: 300px; /* Increased size further */
     height: auto;
     display: block;
     margin: 0 auto 20px;
-    max-width: 30vw;
+    max-width: 35vw;
 }
 
 /* Header Text Styling - Centered */
@@ -67,7 +68,7 @@ header::after {
     color: black;
     text-align: center;
     width: 100%;
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
@@ -90,9 +91,13 @@ section {
         text-align: center;
     }
     #logo {
-        width: 220px;
-        max-width: 35vw;
+        width: 250px;
+        max-width: 40vw;
         margin-bottom: 10px;
+    }
+    header::before, header::after {
+        width: 300px;
+        height: 300px;
     }
     .header-text {
         text-align: center;
