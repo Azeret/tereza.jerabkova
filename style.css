@@ -16,7 +16,7 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling - Centered with Enlarged Graphics */
+/* Header Styling - Centered with Subtle Graphics */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
     padding: 40px;
@@ -34,27 +34,34 @@ header {
     min-height: 50vh;
 }
 
-/* Enlarged Decorative Arcs */
+/* Subtle Decorative Arcs (Thin Circle Parts) */
 header::before, header::after {
     content: "";
     position: absolute;
-    width: 350px;
-    height: 350px;
-    background: rgba(255, 255, 255, 0.2);
+    width: 400px;
+    height: 400px;
+    border: 2px solid black;
     border-radius: 50%;
+    opacity: 0.6;
 }
 
 header::before {
-    top: -100px;
-    left: -100px;
+    top: -120px;
+    left: -120px;
+    border-width: 2px;
+    border-top: none;
+    border-right: none;
 }
 
 header::after {
-    bottom: -100px;
-    right: -100px;
+    bottom: -120px;
+    right: -120px;
+    border-width: 2px;
+    border-bottom: none;
+    border-left: none;
 }
 
-/* Logo Styling - Further Enlarged */
+/* Logo Styling - Enlarged */
 #logo {
     width: 300px; /* Increased size further */
     height: auto;
