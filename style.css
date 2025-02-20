@@ -27,7 +27,7 @@ header {
     justify-content: center;
     text-align: center;
     position: relative;
-    min-height: 220px;
+    min-height: 250px;
     flex-direction: column;
 }
 
@@ -37,7 +37,7 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1300px;
     position: absolute;
     top: 15px;
     left: 50%;
@@ -46,16 +46,16 @@ header {
 }
 
 .header-logo {
-    width: 150px; /* Increased by another 15% */
+    width: 180px; /* Enlarged significantly */
     height: auto;
 }
 
 /* Centered Main Logo */
 #logo {
-    width: 520px; /* Increased by another 15% */
+    width: 600px; /* Enlarged significantly */
     height: auto;
-    max-width: 55vw;
-    margin-top: 90px; /* Ensures spacing below university logos */
+    max-width: 60vw;
+    margin-top: 100px; /* Ensures spacing below university logos */
 }
 
 /* Section Styling - Now Wider */
@@ -78,8 +78,8 @@ section {
 }
 
 .group-member img {
-    width: 160px; /* Increased by another 15% */
-    height: 160px;
+    width: 180px; /* Enlarged significantly */
+    height: 180px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid white;
@@ -93,28 +93,28 @@ section {
 /* Responsive Design */
 @media screen and (max-width: 1024px) {
     .header-logo {
-        width: 130px;
+        width: 150px;
     }
     #logo {
-        width: 460px;
-        max-width: 60vw;
+        width: 520px;
+        max-width: 65vw;
     }
     .group-member img {
-        width: 140px;
-        height: 140px;
+        width: 160px;
+        height: 160px;
     }
 }
 
 @media screen and (max-width: 480px) {
     .header-logo {
-        width: 110px;
+        width: 130px;
     }
     #logo {
-        width: 400px;
-        max-width: 65vw;
+        width: 450px;
+        max-width: 70vw;
     }
     .group-member img {
-        width: 120px;
-        height: 120px;
+        width: 140px;
+        height: 140px;
     }
 }
