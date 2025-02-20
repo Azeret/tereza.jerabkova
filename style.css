@@ -16,7 +16,7 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling - Centering Logo and Text Dynamically */
+/* Header Styling - Ensuring Centered Content */
 header {
     background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
     padding: 40px;
@@ -27,31 +27,34 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: left;
-    gap: 20px;
-    flex-wrap: wrap;
+    text-align: center;
+    flex-direction: column;
 }
 
-/* Logo Styling - Scales Dynamically */
+/* Logo Styling - Centering and Scaling Dynamically */
 #logo {
-    width: clamp(150px, 15vw, 250px); /* Adjusts dynamically with screen size */
+    width: 200px; /* Increased default size */
     height: auto;
     display: block;
+    margin: 0 auto 20px;
+    max-width: 25vw; /* Ensures scaling with screen size */
 }
 
-/* Header Text Styling - Adjusts for Dynamic Layout */
+/* Header Text Styling - Centered */
 .header-text {
     color: black;
     text-align: center;
-    max-width: 60%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Section Styling - Now Wider */
 section {
     padding: 60px;
     margin: 20px auto;
-    width: 95%;
-    max-width: 1400px;
+    width: 90%;
+    max-width: 1200px;
     background-color: var(--section-bg);
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
@@ -63,15 +66,14 @@ section {
     header {
         flex-direction: column;
         text-align: center;
-        align-items: center;
     }
     #logo {
-        width: clamp(120px, 20vw, 200px); /* Adjust dynamically */
+        width: 180px;
+        max-width: 30vw;
         margin-bottom: 10px;
     }
     .header-text {
         text-align: center;
-        max-width: 80%;
     }
 }
 
