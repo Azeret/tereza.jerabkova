@@ -16,19 +16,19 @@ body {
     transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-/* Top Logos Bar - University Logos Left and Right */
+/* Top Logos Bar - Integrated into Header Background */
 .top-logos {
     width: 100vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background-color: rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, var(--highlight-color), #88d3ce);
     position: relative;
 }
 
 .top-logos img {
-    width: 150px; /* Adjusted for better visibility */
+    width: 150px;
     height: auto;
 }
 
