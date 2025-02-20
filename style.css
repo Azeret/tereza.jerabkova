@@ -1,11 +1,11 @@
 /* General Styles */
 :root {
-    --background-color-start: #f8f8f8; /* Light grey */
-    --background-color-end: #d9d9d9; /* Slightly darker grey */
-    --text-color: #000000; /* Black text */
-    --section-bg: #ffffff; /* White background for sections */
-    --highlight-color-uni: #2A2AC0; /* University blue */
-    --highlight-color-faculty: #00A550; /* Faculty green */
+    --background-color-start: #f8f8f8;
+    --background-color-end: #d9d9d9;
+    --text-color: #000000;
+    --section-bg: #ffffff;
+    --highlight-color-uni: #2A2AC0;
+    --highlight-color-faculty: #00A550;
 }
 
 body {
@@ -18,10 +18,10 @@ body {
     transition: background 0.5s ease, color 0.5s ease;
 }
 
-/* Header Styling - More Compact Layout with New Colors */
+/* Header Styling */
 header {
     background: linear-gradient(to right, var(--highlight-color-uni), var(--highlight-color-faculty));
-    padding: 5px 5%; /* Reduced padding for a more compact look */
+    padding: 10px 5%;
     width: 100vw;
     box-sizing: border-box;
     display: flex;
@@ -29,12 +29,12 @@ header {
     justify-content: center;
     text-align: center;
     position: relative;
-    min-height: 140px; /* Reduced height */
+    min-height: 140px;
     flex-direction: column;
-    color: #ffffff; /* Keeping header text white */
+    color: #ffffff;
 }
 
-/* University Logos on the Top Left and Right */
+/* University Logos */
 .header-logos {
     display: flex;
     justify-content: space-between;
@@ -42,7 +42,7 @@ header {
     width: 100%;
     max-width: 1100px;
     position: absolute;
-    top: 5px; /* Moved logos higher */
+    top: 5px;
     left: 50%;
     transform: translateX(-50%);
     padding: 0 5%;
@@ -53,43 +53,42 @@ header {
     height: auto;
 }
 
-/* Centered Main Logo and Title */
+/* Main Logo */
 #logo {
-    width: 500px; /* Adjusted size */
+    width: 500px;
     height: auto;
     max-width: 50vw;
-    margin-top: 30px; /* Moved higher */
+    margin-top: 30px;
 }
 
 .title {
     font-size: 24px;
     font-weight: bold;
-    margin-top: -5px; /* Moved closer to logo */
-    color: #ffffff;
+    margin-top: -5px;
+    color: var(--text-color);
 }
 
-/* Section Styling - Light Background */
+/* Sections */
 section {
-    padding: 35px; /* Reduced padding for compactness */
-    margin: 10px auto; /* Reduced margin */
+    padding: 35px;
+    margin: 10px auto;
     width: 90%;
     max-width: 1200px;
     background-color: var(--section-bg);
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: background 0.5s ease;
-    color: var(--text-color); /* Ensuring text is black */
 }
 
-section h2, section p, section ul, .group-member p {
-    color: var(--text-color); /* Ensuring all section text is black */
+section h2, section p, section ul {
+    color: var(--text-color);
 }
 
-/* Group Members Styling */
+/* Group Members */
 .group-member {
     display: inline-block;
     text-align: center;
-    margin: 8px; /* Reduced margin */
+    margin: 10px;
 }
 
 .group-member img {
@@ -97,6 +96,19 @@ section h2, section p, section ul, .group-member p {
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
+    border: 3px solid black;
+}
+
+.group-member a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Member Profile Page */
+.member-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     border: 3px solid black;
 }
 
@@ -109,7 +121,7 @@ section h2, section p, section ul, .group-member p {
         width: 450px;
         max-width: 55vw;
     }
-    .group-member img {
+    .group-member img, .member-photo {
         width: 140px;
         height: 140px;
     }
@@ -123,7 +135,7 @@ section h2, section p, section ul, .group-member p {
         width: 400px;
         max-width: 60vw;
     }
-    .group-member img {
+    .group-member img, .member-photo {
         width: 120px;
         height: 120px;
     }
