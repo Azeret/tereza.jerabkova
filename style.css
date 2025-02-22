@@ -15,7 +15,7 @@ body {
 
 #header {
     background: linear-gradient(to right, #2A2AC0, #00A550);
-    padding: 30px 5%;
+    padding: 20px 5%; /* Reduced padding for a more compact header */
     text-align: center;
     color: white;
     width: 100%;
@@ -24,7 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    min-height: 180px;
+    min-height: 150px; /* Reduced height */
     position: relative;
 }
 
@@ -36,29 +36,30 @@ body {
     width: 90%;
     max-width: 1100px;
     position: relative;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 .header-logo {
-    width: 220px; /* Increased size for better visibility */
+    width: 220px;
     height: auto;
     max-width: 220px;
 }
 
 /* Main Logo Positioning */
 #logo {
-    width: 500px; /* Adjusted for balanced scaling */
+    width: 500px;
     height: auto;
     position: relative;
+    top: -10px; /* Moved higher for a more compact header */
     max-width: 50vw;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 /* Title Text Adjustments */
 .title {
     font-size: 24px;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 5px;
     color: black;
 }
 
@@ -83,16 +84,17 @@ section {
 .group-member img {
     width: 160px;
     height: 160px;
-    border-radius: 50%; /* Ensured circular frames */
+    border-radius: 50%;
     object-fit: cover;
+    aspect-ratio: 1 / 1; /* Ensures images remain round on all screens */
     border: 3px solid black;
 }
 
 /* Responsive Design Fixes */
 @media (max-width: 1200px) {
     #header {
-        min-height: 160px;
-        padding: 20px 5%;
+        min-height: 140px;
+        padding: 15px 5%;
     }
     .header-logos {
         flex-direction: row;
@@ -101,12 +103,13 @@ section {
         max-width: 1000px;
     }
     .header-logo {
-        width: 200px; /* Increased for better desktop scaling */
+        width: 200px;
         max-width: 200px;
     }
     #logo {
-        width: 450px; /* Adjusted for larger screens */
+        width: 450px;
         max-width: 50vw;
+        top: -10px;
     }
     .title {
         font-size: 26px;
@@ -114,16 +117,15 @@ section {
     .group-member img {
         width: 180px;
         height: 180px;
-        border-radius: 50%; /* Keep images round on all devices */
-        object-fit: cover;
-        border: 3px solid black;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
     }
 }
 
 @media (max-width: 768px) {
     #header {
-        min-height: 150px;
-        padding: 20px 5%;
+        min-height: 130px;
+        padding: 10px 5%;
     }
     .header-logos {
         flex-direction: row;
@@ -132,12 +134,13 @@ section {
         max-width: 800px;
     }
     .header-logo {
-        width: 180px; /* Adjusted for better mobile visibility */
+        width: 180px;
         max-width: 180px;
     }
     #logo {
-        width: 350px; /* Balanced size for mobile */
+        width: 350px;
         max-width: 45vw;
+        top: -10px;
     }
     .title {
         font-size: 22px;
@@ -145,8 +148,7 @@ section {
     .group-member img {
         width: 150px;
         height: 150px;
-        border-radius: 50%; /* Keep images round on mobile */
-        object-fit: cover;
-        border: 3px solid black;
+        border-radius: 50%;
+        aspect-ratio: 1 / 1;
     }
 }
