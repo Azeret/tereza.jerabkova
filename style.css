@@ -42,18 +42,18 @@ body {
 }
 
 .header-logo {
-    width: 180px; /* Scaled for better fit */
+    width: 160px; /* Reduced size for better fitting on small screens */
     height: auto;
-    max-width: 180px;
+    max-width: 160px;
 }
 
 /* Main Logo Positioning */
 #logo {
-    width: 480px;
+    width: 460px;
     height: auto;
     position: relative;
-    top: -5px; /* Positioned to align with the top of the panel */
-    max-width: 45vw;
+    top: -8px; /* Adjusted to prevent overlap */
+    max-width: 42vw;
     margin-bottom: 5px;
 }
 
@@ -61,7 +61,7 @@ body {
 .title {
     font-size: 22px;
     font-weight: bold;
-    margin-top: 2px;
+    margin-top: 0px; /* Reduced margin for better spacing */
     color: black;
 }
 
@@ -69,8 +69,8 @@ body {
 .subtitle {
     font-size: 16px;
     font-weight: lighter;
-    color: rgba(0, 0, 0, 0.7); /* Lighter color */
-    margin-top: 5px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-top: -5px; /* Moved closer to main title */
 }
 
 /* Section Styling - White Boxes Restored */
@@ -111,12 +111,12 @@ section {
         max-width: 900px;
     }
     .header-logo {
-        width: 160px; /* Adjusted for better scaling */
-        max-width: 160px;
+        width: 140px; /* Adjusted for better scaling */
+        max-width: 140px;
     }
     #logo {
         width: 420px;
-        max-width: 50vw;
+        max-width: 48vw;
         top: -5px;
     }
     .title {
@@ -124,6 +124,7 @@ section {
     }
     .subtitle {
         font-size: 14px;
+        margin-top: -3px; /* Closer spacing */
     }
 }
 
@@ -137,8 +138,8 @@ section {
         max-width: 700px;
     }
     .header-logo {
-        width: 140px;
-        max-width: 140px;
+        width: 120px; /* Reduced further for small screens */
+        max-width: 120px;
     }
     #logo {
         width: 320px;
@@ -150,5 +151,6 @@ section {
     }
     .subtitle {
         font-size: 13px;
+        margin-top: -2px;
     }
 }
