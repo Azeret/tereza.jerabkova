@@ -48,7 +48,7 @@ body {
 
 /* Main Logo Positioning */
 #logo {
-    width: 650px; /* Increased size */
+    width: 550px; /* Increased size */
     height: auto;
     position: relative;
     top: 5px; /* Adjusted to fit properly */
