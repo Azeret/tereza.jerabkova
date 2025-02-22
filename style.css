@@ -35,33 +35,30 @@ body {
     align-items: center;
     width: 90%;
     max-width: 1100px;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
+    position: relative;
+    margin-top: 10px;
 }
 
 .header-logo {
-    width: 200px; /* Fixed size for better scaling */
+    width: 220px; /* Increased size for better visibility */
     height: auto;
-    max-width: 200px; 
+    max-width: 220px;
 }
 
 /* Main Logo Positioning */
 #logo {
-    width: 400px; /* Adjusted for better mobile scaling */
+    width: 500px; /* Adjusted for balanced scaling */
     height: auto;
     position: relative;
-    top: 5px;
     max-width: 50vw;
     margin-bottom: 15px;
 }
 
 /* Title Text Adjustments */
 .title {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
-    margin-top: 5px;
+    margin-top: 10px;
     color: black;
 }
 
@@ -86,13 +83,13 @@ section {
 .group-member img {
     width: 160px;
     height: 160px;
-    border-radius: 50%;
+    border-radius: 50%; /* Ensured circular frames */
     object-fit: cover;
     border: 3px solid black;
 }
 
 /* Responsive Design Fixes */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     #header {
         min-height: 160px;
         padding: 20px 5%;
@@ -101,23 +98,55 @@ section {
         flex-direction: row;
         justify-content: space-between;
         width: 100%;
-        max-width: 800px;
-        position: relative;
+        max-width: 1000px;
     }
     .header-logo {
-        width: 150px; /* Adjusted for better mobile visibility */
-        max-width: 150px;
+        width: 200px; /* Increased for better desktop scaling */
+        max-width: 200px;
     }
     #logo {
-        width: 280px; /* Reduced size for mobile */
-        max-width: 40vw;
-        top: 0px;
+        width: 450px; /* Adjusted for larger screens */
+        max-width: 50vw;
     }
     .title {
-        font-size: 5vw;
+        font-size: 26px;
     }
     .group-member img {
-        width: 25vw;
-        max-width: 150px;
+        width: 180px;
+        height: 180px;
+        border-radius: 50%; /* Keep images round on all devices */
+        object-fit: cover;
+        border: 3px solid black;
+    }
+}
+
+@media (max-width: 768px) {
+    #header {
+        min-height: 150px;
+        padding: 20px 5%;
+    }
+    .header-logos {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 800px;
+    }
+    .header-logo {
+        width: 180px; /* Adjusted for better mobile visibility */
+        max-width: 180px;
+    }
+    #logo {
+        width: 350px; /* Balanced size for mobile */
+        max-width: 45vw;
+    }
+    .title {
+        font-size: 22px;
+    }
+    .group-member img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%; /* Keep images round on mobile */
+        object-fit: cover;
+        border: 3px solid black;
     }
 }
