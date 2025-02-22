@@ -1,142 +1,45 @@
-/* General Styles */
-:root {
-    --background-color-start: #f8f8f8;
-    --background-color-end: #d9d9d9;
-    --text-color: #000000;
-    --section-bg: #ffffff;
-    --highlight-color-uni: #2A2AC0;
-    --highlight-color-faculty: #00A550;
-}
-
+/* General Styling */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, var(--background-color-start), var(--background-color-end));
-    color: var(--text-color);
+    background: linear-gradient(to bottom, #f8f8f8, #d9d9d9);
+    color: black;
     text-align: center;
-    transition: background 0.5s ease, color 0.5s ease;
 }
 
 /* Header Styling */
 header {
-    background: linear-gradient(to right, var(--highlight-color-uni), var(--highlight-color-faculty));
+    background: linear-gradient(to right, #2A2AC0, #00A550);
     padding: 10px 5%;
-    width: 100vw;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     text-align: center;
-    position: relative;
-    min-height: 140px;
-    flex-direction: column;
-    color: #ffffff;
+    color: white;
 }
 
-/* University Logos */
+/* Logos */
 .header-logos {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     max-width: 1100px;
-    position: absolute;
-    top: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 0 5%;
+    margin: 0 auto;
 }
 
 .header-logo {
-    width: 150px;
+    width: 187px; /* Adjusted size */
     height: auto;
 }
 
-/* Main Logo */
 #logo {
-    width: 500px;
+    width: 575px;
     height: auto;
-    max-width: 50vw;
-    margin-top: 30px;
-}
-
-.title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: -5px;
-    color: var(--text-color);
-}
-
-/* Sections */
-section {
-    padding: 35px;
-    margin: 10px auto;
-    width: 90%;
-    max-width: 1200px;
-    background-color: var(--section-bg);
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: background 0.5s ease;
-}
-
-section h2, section p, section ul {
-    color: var(--text-color);
 }
 
 /* Group Members */
-.group-member {
-    display: inline-block;
-    text-align: center;
-    margin: 10px;
-}
-
 .group-member img {
     width: 160px;
     height: 160px;
     border-radius: 50%;
     object-fit: cover;
     border: 3px solid black;
-}
-
-.group-member a {
-    text-decoration: none;
-    color: inherit;
-}
-
-/* Member Profile Page */
-.member-photo {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    border: 3px solid black;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
-    .header-logo {
-        width: 130px;
-    }
-    #logo {
-        width: 450px;
-        max-width: 55vw;
-    }
-    .group-member img, .member-photo {
-        width: 140px;
-        height: 140px;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .header-logo {
-        width: 110px;
-    }
-    #logo {
-        width: 400px;
-        max-width: 60vw;
-    }
-    .group-member img, .member-photo {
-        width: 120px;
-        height: 120px;
-    }
 }
