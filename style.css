@@ -9,7 +9,7 @@ body {
 }
 
 /* Header Styling */
-header {
+#header {
     background: linear-gradient(to right, #2A2AC0, #00A550);
     padding: 10px 5%;
     text-align: center;
@@ -35,7 +35,30 @@ header {
     height: auto;
 }
 
+/* Sections with Background */
+section {
+    padding: 35px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 1200px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Titles */
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
 /* Group Members */
+.group-member {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
 .group-member img {
     width: 160px;
     height: 160px;
