@@ -9,74 +9,56 @@ body {
 }
 
 /* Header Styling */
-#header {
-    background: linear-gradient(to right, #2A2AC0, #00A550);
-    padding: 10px 5%;
-    text-align: center;
-    color: white;
-}
-
-/* Logos */
-.header-logos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.header-logo {
-    width: 187px; /* Adjusted size */
-    height: auto;
-}
-
-#logo {
-    width: 575px;
-    height: auto;
-}
-
-/* Sections with Background */
-section {
-    padding: 35px;
-    margin: 20px auto;
-    width: 90%;
-    max-width: 1200px;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-}
-
-/* Titles */
-h2 {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-/* Group Members */
-.group-member {
-    display: inline-block;
-    text-align: center;
-    margin: 20px;
-}
-
-.group-member img {
-    width: 160px;
-    height: 160px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 3px solid black;
-}
-
-/* Ensure the header loads correctly */
 #header-container {
     width: 100%;
 }
 
 #header {
     background: linear-gradient(to right, #2A2AC0, #00A550);
-    padding: 10px 5%;
+    padding: 5px 5%; /* Reduced padding to make panel more compact */
     text-align: center;
     color: white;
     width: 100%;
     box-sizing: border-box;
-} -->
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px; /* Reduced height for a more compact look */
+    position: relative;
+}
+
+/* Logos inside the header */
+.header-logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1100px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.header-logo {
+    width: 187px;
+    height: auto;
+}
+
+/* Main Logo Positioning */
+#logo {
+    width: 575px;
+    height: auto;
+    position: absolute;
+    top: 35px; /* Move it up to fit between university logos */
+    max-width: 50vw;
+}
+
+/* Title Text Adjustments */
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 75px; /* Adjust to move text higher */
+    color: black; /* Changed to black */
+}
