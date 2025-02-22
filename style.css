@@ -66,3 +66,18 @@ h2 {
     object-fit: cover;
     border: 3px solid black;
 }
+
+/* Ensure the header loads correctly */
+#header-container {
+    width: 100%;
+}
+
+/* Fix the loaded header appearance */
+#header {
+    background: linear-gradient(to right, #2A2AC0, #00A550);
+    padding: 10px 5%;
+    text-align: center;
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+}
